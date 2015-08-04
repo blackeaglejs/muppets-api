@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   root 'muppets#client'
   
   resources :muppets
+  resources :api, :only => [:index, :show, :create, :update, :destroy]
 
 end
